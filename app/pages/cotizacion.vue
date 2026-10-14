@@ -1,1695 +1,1265 @@
+
 <template>
-  <div class="pagina">
+  <main class="pagina-cotizacion">
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <NuxtLink to="/" class="logo">
+        <span class="logo-icono">S</span>
+        <span class="logo-texto">
+          SEYER<span>.WHOLESALE</span>
+        </span>
+      </NuxtLink>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-    <header class="navbar">
-      <div class="contenedor nav-contenido">
-
-        <NuxtLink to="/" class="logo-area">
-          <img
-            src="/logo.png"
-            alt="Seyer.Wholesale"
-            class="logo"
-          />
-
-          <div class="nombre-logo">
-            <strong>Seyer</strong><span>.Wholesale</span>
-          </div>
+      <nav class="navegacion">
+        <NuxtLink to="/">Inicio</NuxtLink>
+        <NuxtLink to="/servicios">Servicios</NuxtLink>
+        <NuxtLink to="/productos">Productos</NuxtLink>
+        <NuxtLink to="/cotizacion" class="activo">
+          Cotización
         </NuxtLink>
+      </nav>
 
-        <nav class="menu">
-          <NuxtLink to="/">Inicio</NuxtLink>
-          <NuxtLink to="/#nosotros">Nosotros</NuxtLink>
-          <NuxtLink to="/#galeria">Empresa</NuxtLink>
-          <NuxtLink to="/#servicios">Servicios</NuxtLink>
-
-          <NuxtLink
-            to="/cotizacion"
-            class="activo"
-          >
-            Cotización
-          </NuxtLink>
-        </nav>
-
-        <NuxtLink
-          to="/"
-          class="boton-regresar"
-        >
-          ← Inicio
-        </NuxtLink>
-
-      </div>
+      <NuxtLink to="/contacto" class="boton-contacto">
+        Contáctanos
+        <span>↗</span>
+      </NuxtLink>
     </header>
 
+    <!-- Presentación -->
+    <section class="hero">
+      <div class="hero-contenido">
+        <span class="etiqueta">
+          <span class="punto"></span>
+          SOLICITUDES COMERCIALES
+        </span>
 
-    <!-- =========================
-         ENCABEZADO
-    ========================== -->
-    <main>
+        <h1>
+          Hagamos crecer<br />
+          tu <span>negocio.</span>
+        </h1>
 
-      <section class="encabezado">
+        <p>
+          Cuéntanos qué necesitas y nuestro equipo preparará
+          una propuesta adaptada a los requerimientos de tu empresa.
+        </p>
 
-        <div class="decoracion decoracion-1"></div>
-        <div class="decoracion decoracion-2"></div>
-
-        <div class="contenedor encabezado-contenido">
-
-          <div class="encabezado-texto">
-
-            <p class="etiqueta">
-              SEYER.WHOLESALE
-            </p>
-
-            <h1>
-              Solicita tu
-              <span>cotización.</span>
-            </h1>
-
-            <p>
-              Completa el siguiente formulario con la información
-              de lo que deseas cotizar. Nuestro equipo podrá
-              conocer tu solicitud y darle seguimiento.
-            </p>
-
+        <div class="hero-detalles">
+          <div class="detalle">
+            <span class="detalle-icono">✓</span>
+            <span>Atención personalizada</span>
           </div>
 
-
-          <div class="encabezado-logo">
-
-            <img
-              src="/logo.png"
-              alt="Logo Seyer.Wholesale"
-            />
-
+          <div class="detalle">
+            <span class="detalle-icono">✓</span>
+            <span>Propuestas a tu medida</span>
           </div>
 
+          <div class="detalle">
+            <span class="detalle-icono">✓</span>
+            <span>Atención profesional</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-decoracion">
+        <div class="circulo circulo-grande"></div>
+        <div class="circulo circulo-mediano"></div>
+        <div class="circulo circulo-pequeno"></div>
+
+        <div class="tarjeta-flotante">
+          <span class="tarjeta-icono">✦</span>
+          <div>
+            <strong>Tu próximo proyecto</strong>
+            <p>Comienza con una cotización</p>
+          </div>
         </div>
 
-      </section>
-
-
-      <!-- =========================
-           FORMULARIO
-      ========================== -->
-      <section class="formulario-seccion">
-
-        <div class="contenedor">
-
-          <div class="formulario-grid">
-
-            <!-- =========================
-                 INFORMACIÓN
-            ========================== -->
-            <aside class="informacion">
-
-              <p class="mini-titulo">
-                INFORMACIÓN
-              </p>
-
-              <h2>
-                Cuéntanos qué
-                <span>necesitas.</span>
-              </h2>
-
-              <p class="texto-info">
-                Proporciona los datos de tu solicitud para que
-                podamos conocer el producto, cantidad y
-                características que deseas cotizar.
-              </p>
-
-
-              <div class="pasos">
-
-                <!-- PASO 1 -->
-                <div class="paso">
-
-                  <div class="numero">
-                    01
-                  </div>
-
-                  <div>
-                    <strong>
-                      Tus datos
-                    </strong>
-
-                    <p>
-                      Información básica de contacto.
-                    </p>
-                  </div>
-
-                </div>
-
-
-                <!-- PASO 2 -->
-                <div class="paso">
-
-                  <div class="numero">
-                    02
-                  </div>
-
-                  <div>
-                    <strong>
-                      Producto o servicio
-                    </strong>
-
-                    <p>
-                      Indica qué deseas cotizar.
-                    </p>
-                  </div>
-
-                </div>
-
-
-                <!-- PASO 3 -->
-                <div class="paso">
-
-                  <div class="numero">
-                    03
-                  </div>
-
-                  <div>
-                    <strong>
-                      Detalles de la solicitud
-                    </strong>
-
-                    <p>
-                      Agrega cantidades y características.
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </aside>
-
-
-            <!-- =========================
-                 FORMULARIO
-            ========================== -->
-            <div class="formulario">
-
-              <form @submit.prevent="enviarFormulario">
-
-
-                <!-- DATOS DE CONTACTO -->
-                <div class="seccion-form">
-
-                  <div class="titulo-form">
-
-                    <span>
-                      01
-                    </span>
-
-                    <h3>
-                      Datos de contacto
-                    </h3>
-
-                  </div>
-
-
-                  <div class="campos">
-
-                    <div class="campo">
-
-                      <label for="nombre">
-                        Nombre completo *
-                      </label>
-
-                      <input
-                        id="nombre"
-                        v-model="formulario.nombre"
-                        type="text"
-                        placeholder="Escribe tu nombre"
-                        required
-                      />
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="empresa">
-                        Empresa
-                      </label>
-
-                      <input
-                        id="empresa"
-                        v-model="formulario.empresa"
-                        type="text"
-                        placeholder="Nombre de tu empresa"
-                      />
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="correo">
-                        Correo electrónico *
-                      </label>
-
-                      <input
-                        id="correo"
-                        v-model="formulario.correo"
-                        type="email"
-                        placeholder="ejemplo@correo.com"
-                        required
-                      />
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="telefono">
-                        Teléfono *
-                      </label>
-
-                      <input
-                        id="telefono"
-                        v-model="formulario.telefono"
-                        type="tel"
-                        placeholder="55 0000 0000"
-                        required
-                      />
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <!-- INFORMACIÓN DE COTIZACIÓN -->
-                <div class="seccion-form">
-
-                  <div class="titulo-form">
-
-                    <span>
-                      02
-                    </span>
-
-                    <h3>
-                      Información de cotización
-                    </h3>
-
-                  </div>
-
-
-                  <div class="campos">
-
-                    <div class="campo">
-
-                      <label for="servicio">
-                        Servicio *
-                      </label>
-
-                      <select
-                        id="servicio"
-                        v-model="formulario.servicio"
-                        required
-                      >
-
-                        <option
-                          value=""
-                          disabled
-                        >
-                          Selecciona una opción
-                        </option>
-
-                        <option value="Comercio mayorista">
-                          Comercio mayorista
-                        </option>
-
-                        <option value="Distribución">
-                          Distribución
-                        </option>
-
-                        <option value="Logística">
-                          Logística
-                        </option>
-
-                        <option value="Soluciones comerciales">
-                          Soluciones comerciales
-                        </option>
-
-                        <option value="Otro">
-                          Otro
-                        </option>
-
-                      </select>
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="producto">
-                        Producto
-                      </label>
-
-                      <input
-                        id="producto"
-                        v-model="formulario.producto"
-                        type="text"
-                        placeholder="Producto de interés"
-                      />
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="cantidad">
-                        Cantidad aproximada
-                      </label>
-
-                      <input
-                        id="cantidad"
-                        v-model="formulario.cantidad"
-                        type="number"
-                        min="1"
-                        placeholder="Ej. 100"
-                      />
-
-                    </div>
-
-
-                    <div class="campo">
-
-                      <label for="fecha">
-                        Fecha requerida
-                      </label>
-
-                      <input
-                        id="fecha"
-                        v-model="formulario.fecha"
-                        type="date"
-                      />
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <!-- DETALLES -->
-                <div class="seccion-form">
-
-                  <div class="titulo-form">
-
-                    <span>
-                      03
-                    </span>
-
-                    <h3>
-                      Detalles de la solicitud
-                    </h3>
-
-                  </div>
-
-
-                  <div class="campo">
-
-                    <label for="mensaje">
-                      Información adicional
-                    </label>
-
-                    <textarea
-                      id="mensaje"
-                      v-model="formulario.mensaje"
-                      rows="6"
-                      placeholder="Escribe aquí las características, cantidades, especificaciones o cualquier detalle que quieras agregar..."
-                    ></textarea>
-
-                  </div>
-
-                </div>
-
-
-                <!-- CONFIRMACIÓN -->
-                <div class="terminos">
-
-                  <label>
-
-                    <input
-                      v-model="formulario.acepta"
-                      type="checkbox"
-                      required
-                    />
-
-                    <span>
-                      Confirmo que la información proporcionada
-                      es correcta.
-                    </span>
-
-                  </label>
-
-                </div>
-
-
-                <!-- BOTÓN -->
-                <button
-                  type="submit"
-                  class="boton-enviar"
-                >
-
-                  <span>
-                    Enviar solicitud
-                  </span>
-
-                  <strong>
-                    →
-                  </strong>
-
-                </button>
-
-
-                <!-- MENSAJE -->
-                <div
-                  v-if="enviado"
-                  class="mensaje-exito"
-                >
-                  ✓ Tu solicitud de cotización ha sido
-                  preparada correctamente.
-                </div>
-
-              </form>
-
+        <div class="hero-inicial">S</div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="seccion-formulario">
+      <div class="introduccion-formulario">
+        <span class="subtitulo">EMPECEMOS</span>
+        <h2>Solicita tu cotización</h2>
+        <p>
+          Completa los siguientes campos para que podamos conocer
+          tus necesidades y ponernos en contacto contigo.
+        </p>
+
+        <div class="nota">
+          <span class="nota-icono">i</span>
+          Los campos marcados con * son obligatorios.
+        </div>
+      </div>
+
+      <form class="formulario" @submit.prevent="enviarFormulario">
+        <!-- Información de contacto -->
+        <div class="grupo-seccion">
+          <div class="titulo-seccion">
+            <span class="numero-seccion">01</span>
+            <div>
+              <h3>Información de contacto</h3>
+              <p>Datos de la persona o empresa solicitante.</p>
+            </div>
+          </div>
+
+          <div class="rejilla">
+            <div class="campo">
+              <label for="nombre">Nombre completo *</label>
+              <input
+                id="nombre"
+                v-model.trim="formulario.nombre"
+                type="text"
+                placeholder="Escribe tu nombre"
+                autocomplete="name"
+                maxlength="120"
+                required
+              />
             </div>
 
-          </div>
+            <div class="campo">
+              <label for="empresa">Nombre de la empresa *</label>
+              <input
+                id="empresa"
+                v-model.trim="formulario.empresa"
+                type="text"
+                placeholder="Nombre de tu empresa"
+                autocomplete="organization"
+                maxlength="150"
+                required
+              />
+            </div>
 
+            <div class="campo">
+              <label for="correo">Correo electrónico *</label>
+              <input
+                id="correo"
+                v-model.trim="formulario.correo"
+                type="email"
+                placeholder="nombre@empresa.com"
+                autocomplete="email"
+                maxlength="150"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono *</label>
+              <input
+                id="telefono"
+                v-model.trim="formulario.telefono"
+                type="tel"
+                placeholder="Tu número de contacto"
+                autocomplete="tel"
+                maxlength="25"
+                required
+              />
+            </div>
+          </div>
         </div>
 
-      </section>
+        <div class="separador"></div>
 
-    </main>
+        <!-- Detalles de la cotización -->
+        <div class="grupo-seccion">
+          <div class="titulo-seccion">
+            <span class="numero-seccion">02</span>
+            <div>
+              <h3>Detalles de la cotización</h3>
+              <p>Cuéntanos qué producto o servicio necesitas.</p>
+            </div>
+          </div>
 
+          <div class="rejilla">
+            <div class="campo">
+              <label for="servicio">Tipo de servicio *</label>
+              <select
+                id="servicio"
+                v-model="formulario.servicio"
+                required
+              >
+                <option disabled value="">
+                  Selecciona una opción
+                </option>
+                <option value="Venta de productos">
+                  Venta de productos
+                </option>
+                <option value="Venta al mayoreo">
+                  Venta al mayoreo
+                </option>
+                <option value="Distribución">
+                  Distribución
+                </option>
+                <option value="Abastecimiento empresarial">
+                  Abastecimiento empresarial
+                </option>
+                <option value="Otro">
+                  Otro
+                </option>
+              </select>
+            </div>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer>
+            <div class="campo">
+              <label for="producto">Producto o servicio *</label>
+              <input
+                id="producto"
+                v-model.trim="formulario.producto"
+                type="text"
+                placeholder="¿Qué necesitas cotizar?"
+                maxlength="200"
+                required
+              />
+            </div>
 
-      <div class="contenedor footer-contenido">
+            <div class="campo">
+              <label for="cantidad">Cantidad aproximada *</label>
+              <input
+                id="cantidad"
+                v-model="formulario.cantidad"
+                type="number"
+                min="1"
+                step="1"
+                placeholder="Ej. 100"
+                required
+              />
+            </div>
 
-        <div class="footer-marca">
+            <div class="campo">
+              <label for="fecha">Fecha requerida</label>
+              <input
+                id="fecha"
+                v-model="formulario.fecha"
+                type="date"
+                :min="fechaMinima"
+              />
+            </div>
 
-          <img
-            src="/logo.png"
-            alt="Seyer.Wholesale"
+            <div class="campo campo-completo">
+              <label for="mensaje">
+                Descripción adicional
+              </label>
+              <textarea
+                id="mensaje"
+                v-model.trim="formulario.mensaje"
+                rows="5"
+                maxlength="2000"
+                placeholder="Describe las características, especificaciones o requisitos de tu solicitud..."
+              ></textarea>
+              <span class="contador">
+                {{ formulario.mensaje.length }}/2000 caracteres
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <!-- Confirmación -->
+        <div class="confirmacion">
+          <input
+            id="acepta"
+            v-model="formulario.acepta"
+            type="checkbox"
+            required
           />
 
+          <label for="acepta">
+            Confirmo que la información proporcionada es correcta
+            y acepto que Seyer.Wholesale utilice estos datos para
+            dar seguimiento a mi solicitud de cotización. *
+          </label>
+        </div>
+
+        <!-- Mensajes -->
+        <div
+          v-if="enviado"
+          class="mensaje-exito"
+          role="status"
+          aria-live="polite"
+        >
+          <span class="mensaje-icono">✓</span>
           <div>
-
-            <h3>
-              Seyer<span>.Wholesale</span>
-            </h3>
-
+            <strong>¡Solicitud enviada!</strong>
             <p>
-              Conectando productos, oportunidades y soluciones
-              comerciales.
+              Tu solicitud de cotización se guardó correctamente.
             </p>
-
           </div>
-
         </div>
 
-
-        <div class="footer-links">
-
-          <NuxtLink to="/">
-            ← Volver al inicio
-          </NuxtLink>
-
+        <div
+          v-if="errorEnvio"
+          class="mensaje-error"
+          role="alert"
+          aria-live="assertive"
+        >
+          <strong>No se pudo enviar la solicitud.</strong>
+          <p>{{ errorEnvio }}</p>
         </div>
 
-      </div>
+        <!-- Botón -->
+        <div class="acciones-formulario">
+          <p>
+            <span>🔒</span>
+            Tus datos se utilizarán para dar seguimiento a tu solicitud.
+          </p>
 
-
-      <div class="footer-final">
-
-        <div class="contenedor">
-          © 2026 Seyer.Wholesale
+          <button
+            type="submit"
+            class="boton-enviar"
+            :disabled="enviando"
+          >
+            <span>
+              {{
+                enviando
+                  ? 'Enviando solicitud...'
+                  : 'Enviar solicitud'
+              }}
+            </span>
+            <strong>{{ enviando ? '...' : '→' }}</strong>
+          </button>
         </div>
+      </form>
+    </section>
 
-      </div>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <NuxtLink to="/" class="logo logo-pie">
+        <span class="logo-icono">S</span>
+        <span class="logo-texto">
+          SEYER<span>.WHOLESALE</span>
+        </span>
+      </NuxtLink>
 
+      <p>
+        Soluciones comerciales para impulsar tu negocio.
+      </p>
+
+      <span class="copyright">
+        © {{ anioActual }} Seyer.Wholesale. Todos los derechos reservados.
+      </span>
     </footer>
-
-  </div>
+  </main>
 </template>
 
-
 <script setup>
-
-import { reactive, ref } from 'vue'
-
-
-/* =========================
-   ESTADO
-========================= */
+import { reactive, ref, computed } from 'vue'
 
 const enviado = ref(false)
-
-
-/* =========================
-   FORMULARIO
-========================= */
+const enviando = ref(false)
+const errorEnvio = ref('')
 
 const formulario = reactive({
-
   nombre: '',
-
   empresa: '',
-
   correo: '',
-
   telefono: '',
-
   servicio: '',
-
   producto: '',
-
   cantidad: '',
-
   fecha: '',
-
   mensaje: '',
-
   acepta: false
-
 })
 
+const anioActual = new Date().getFullYear()
 
-/* =========================
-   ENVIAR
-========================= */
+const fechaMinima = computed(() => {
+  const hoy = new Date()
+  const anio = hoy.getFullYear()
+  const mes = String(hoy.getMonth() + 1).padStart(2, '0')
+  const dia = String(hoy.getDate()).padStart(2, '0')
 
-function enviarFormulario() {
+  return `${anio}-${mes}-${dia}`
+})
 
-  enviado.value = true
+async function enviarFormulario() {
+  enviado.value = false
+  errorEnvio.value = ''
 
-  console.log(
-    'Solicitud de cotización:',
-    formulario
-  )
+  if (!formulario.acepta) {
+    errorEnvio.value =
+      'Debes confirmar la información antes de continuar.'
+    return
+  }
 
+  if (
+    !formulario.nombre ||
+    !formulario.empresa ||
+    !formulario.correo ||
+    !formulario.telefono ||
+    !formulario.servicio ||
+    !formulario.producto ||
+    !formulario.cantidad
+  ) {
+    errorEnvio.value =
+      'Completa todos los campos obligatorios.'
+    return
+  }
+
+  if (
+    !Number.isInteger(Number(formulario.cantidad)) ||
+    Number(formulario.cantidad) < 1
+  ) {
+    errorEnvio.value =
+      'La cantidad debe ser un número entero mayor que cero.'
+    return
+  }
+
+  enviando.value = true
+
+  try {
+    const respuesta = await $fetch('/api/cotizacion', {
+      method: 'POST',
+      body: {
+        nombre: formulario.nombre,
+        empresa: formulario.empresa,
+        correo: formulario.correo,
+        telefono: formulario.telefono,
+        servicio: formulario.servicio,
+        producto: formulario.producto,
+        cantidad: Number(formulario.cantidad),
+        fecha: formulario.fecha || null,
+        mensaje: formulario.mensaje,
+        acepta: formulario.acepta
+      }
+    })
+
+    if (respuesta?.ok !== true) {
+      throw new Error(
+        'El servidor no confirmó el registro de la solicitud.'
+      )
+    }
+
+    enviado.value = true
+
+    Object.assign(formulario, {
+      nombre: '',
+      empresa: '',
+      correo: '',
+      telefono: '',
+      servicio: '',
+      producto: '',
+      cantidad: '',
+      fecha: '',
+      mensaje: '',
+      acepta: false
+    })
+  } catch (error) {
+    console.error(
+      'Error al enviar la cotización:',
+      error
+    )
+
+    errorEnvio.value =
+      error?.data?.statusMessage ||
+      error?.data?.message ||
+      error?.message ||
+      'Ocurrió un problema al enviar tu solicitud. Inténtalo nuevamente.'
+  } finally {
+    enviando.value = false
+  }
 }
-
 </script>
 
-
 <style scoped>
-
-/* =====================================================
-   GENERAL
-===================================================== */
+:root {
+  color-scheme: light;
+}
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.pagina {
-
+.pagina-cotizacion {
   min-height: 100vh;
-
-  background: #f8f4fb;
-
-  color: #281332;
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  background: #fbfaff;
+  color: #242039;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
 }
 
-.contenedor {
+/* Encabezado */
 
-  width: min(1180px, 90%);
-
-  margin: 0 auto;
-
-}
-
-
-/* =====================================================
-   NAVBAR
-===================================================== */
-
-.navbar {
-
-  position: sticky;
-
-  top: 0;
-
-  z-index: 1000;
-
-  background:
-    rgba(255, 255, 255, 0.97);
-
-  border-bottom:
-    1px solid #e9e0ef;
-
-  backdrop-filter:
-    blur(12px);
-
-}
-
-.nav-contenido {
-
+.encabezado {
   min-height: 82px;
-
+  padding: 0 7%;
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
-  gap: 25px;
-
-}
-
-
-/* =====================================================
-   LOGO
-===================================================== */
-
-.logo-area {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  text-decoration: none;
-
-  color: #32124d;
-
-  white-space: nowrap;
-
+  gap: 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #efedf5;
 }
 
 .logo {
-
-  width: 55px;
-
-  height: 55px;
-
-  object-fit: contain;
-
-}
-
-.nombre-logo {
-
-  font-size: 20px;
-
-  font-weight: 800;
-
-}
-
-.nombre-logo span {
-
-  color: #8b45c6;
-
-}
-
-
-/* =====================================================
-   MENÚ
-===================================================== */
-
-.menu {
-
-  display: flex;
-
+  display: inline-flex;
   align-items: center;
-
-  gap: 25px;
-
-}
-
-.menu a {
-
-  color: #5c5364;
-
+  gap: 11px;
   text-decoration: none;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  transition: 0.3s;
-
+  color: #25164d;
+  flex-shrink: 0;
 }
 
-.menu a:hover {
-
-  color: #7432a7;
-
-}
-
-.menu .activo {
-
-  color: #7432a7;
-
-}
-
-
-/* =====================================================
-   BOTÓN INICIO
-===================================================== */
-
-.boton-regresar {
-
-  padding: 12px 18px;
-
-  color: #6f2da8;
-
-  border:
-    1px solid #cdb2db;
-
-  border-radius: 9px;
-
-  text-decoration: none;
-
-  font-size: 13px;
-
-  font-weight: bold;
-
-  transition: 0.3s;
-
-}
-
-.boton-regresar:hover {
-
-  background: #6f2da8;
-
-  color: white;
-
-}
-
-
-/* =====================================================
-   ENCABEZADO
-===================================================== */
-
-.encabezado {
-
-  position: relative;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      #321343,
-      #71329b
-    );
-
-  color: white;
-
-}
-
-.decoracion {
-
-  position: absolute;
-
-  border-radius: 50%;
-
-  pointer-events: none;
-
-}
-
-.decoracion-1 {
-
-  width: 450px;
-
-  height: 450px;
-
-  right: -150px;
-
-  top: -230px;
-
-  background:
-    rgba(255, 255, 255, 0.08);
-
-}
-
-.decoracion-2 {
-
-  width: 250px;
-
-  height: 250px;
-
-  left: -100px;
-
-  bottom: -150px;
-
-  background:
-    rgba(255, 255, 255, 0.06);
-
-}
-
-.encabezado-contenido {
-
-  position: relative;
-
-  z-index: 2;
-
-  min-height: 400px;
-
+.logo-icono {
+  width: 39px;
+  height: 39px;
   display: grid;
-
-  grid-template-columns:
-    1.2fr 0.8fr;
-
-  align-items: center;
-
-  gap: 60px;
-
-  padding: 70px 0;
-
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7b45e8, #4d20a7);
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 800;
 }
 
+.logo-texto {
+  font-size: 16px;
+  font-weight: 850;
+  letter-spacing: 0.5px;
+}
 
-/* =====================================================
-   TEXTO DEL ENCABEZADO
-===================================================== */
+.logo-texto span {
+  color: #8250d9;
+}
 
-.encabezado-texto {
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+}
 
-  max-width: 650px;
+.navegacion a {
+  color: #6d687b;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
 
+.navegacion a:hover,
+.navegacion a.activo {
+  color: #7742d4;
+}
+
+.navegacion a.activo {
+  position: relative;
+}
+
+.navegacion a.activo::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  background: #8752e6;
+  border-radius: 5px;
+}
+
+.boton-contacto {
+  padding: 12px 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #7541d2;
+  color: #ffffff;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.boton-contacto:hover {
+  background: #5b2ab2;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  min-height: 370px;
+  padding: 64px 10%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 83% 30%,
+      rgba(170, 130, 255, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(115deg, #211341 0%, #392064 58%, #4f2b82 100%);
+  color: #ffffff;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 610px;
 }
 
 .etiqueta {
-
-  color: #dec6eb;
-
-  font-size: 12px;
-
-  font-weight: 800;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 18px;
-
-}
-
-.encabezado h1 {
-
-  margin: 0;
-
-  font-size:
-    clamp(45px, 6vw, 70px);
-
-  line-height: 1.02;
-
-  letter-spacing: -2px;
-
-}
-
-.encabezado h1 span {
-
-  color: #d6b0e8;
-
-}
-
-.encabezado-texto > p:last-child {
-
-  max-width: 570px;
-
-  color: #eadff0;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-
-  margin-top: 25px;
-
-}
-
-
-/* =====================================================
-   LOGO ENCABEZADO
-===================================================== */
-
-.encabezado-logo {
-
-  display: flex;
-
-  justify-content: center;
-
+  display: inline-flex;
   align-items: center;
-
-}
-
-.encabezado-logo img {
-
-  width: min(340px, 90%);
-
-  height: auto;
-
-  object-fit: contain;
-
-  filter:
-    drop-shadow(
-      0 20px 30px
-      rgba(0, 0, 0, 0.20)
-    );
-
-}
-
-
-/* =====================================================
-   FORMULARIO
-===================================================== */
-
-.formulario-seccion {
-
-  padding: 100px 0;
-
-  background: #f8f4fb;
-
-}
-
-.formulario-grid {
-
-  display: grid;
-
-  grid-template-columns:
-    0.7fr 1.3fr;
-
-  gap: 70px;
-
-  align-items: start;
-
-}
-
-
-/* =====================================================
-   INFORMACIÓN
-===================================================== */
-
-.informacion {
-
-  position: sticky;
-
-  top: 110px;
-
-}
-
-.mini-titulo {
-
-  color: #7935aa;
-
-  font-size: 12px;
-
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #d6c1ff;
+  font-size: 10px;
   font-weight: 800;
-
   letter-spacing: 2px;
-
-  margin-bottom: 18px;
-
 }
 
-.informacion h2 {
-
-  color: #281332;
-
-  font-size:
-    clamp(32px, 4vw, 46px);
-
-  line-height: 1.1;
-
-  margin: 0 0 20px;
-
-}
-
-.informacion h2 span {
-
-  color: #7935aa;
-
-}
-
-.texto-info {
-
-  color: #706678;
-
-  line-height: 1.7;
-
-  font-size: 15px;
-
-}
-
-
-/* =====================================================
-   PASOS
-===================================================== */
-
-.pasos {
-
-  margin-top: 45px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 25px;
-
-}
-
-.paso {
-
-  display: flex;
-
-  gap: 18px;
-
-  align-items: flex-start;
-
-}
-
-.paso .numero {
-
-  min-width: 52px;
-
-  height: 52px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
+.punto {
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-
-  background: #e8d8f0;
-
-  color: #71329b;
-
-  font-size: 12px;
-
-  font-weight: bold;
-
+  background: #c6a3ff;
+  box-shadow: 0 0 12px rgba(198, 163, 255, 0.7);
 }
 
-.paso strong {
-
-  display: block;
-
-  color: #38203f;
-
-  margin-bottom: 5px;
-
-}
-
-.paso p {
-
+.hero h1 {
   margin: 0;
-
-  color: #82768a;
-
-  font-size: 13px;
-
-  line-height: 1.5;
-
+  font-size: clamp(38px, 5vw, 57px);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
+.hero h1 span {
+  color: #c3a0ff;
+}
 
-/* =====================================================
-   CAJA FORMULARIO
-===================================================== */
+.hero-contenido > p {
+  max-width: 500px;
+  margin: 20px 0 0;
+  color: #d6cfe5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.hero-detalles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 27px;
+}
+
+.detalle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e5def3;
+  font-size: 11px;
+}
+
+.detalle-icono {
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(190, 155, 255, 0.18);
+  color: #d1b6ff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hero-decoracion {
+  position: relative;
+  min-height: 245px;
+  display: grid;
+  place-items: center;
+}
+
+.circulo {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(214, 190, 255, 0.25);
+}
+
+.circulo-grande {
+  width: 255px;
+  height: 255px;
+  background: rgba(177, 132, 255, 0.06);
+}
+
+.circulo-mediano {
+  width: 190px;
+  height: 190px;
+  background: rgba(177, 132, 255, 0.08);
+}
+
+.circulo-pequeno {
+  width: 125px;
+  height: 125px;
+  background: linear-gradient(
+    145deg,
+    rgba(190, 151, 255, 0.65),
+    rgba(111, 64, 186, 0.3)
+  );
+  box-shadow: 0 0 60px rgba(168, 118, 255, 0.15);
+}
+
+.hero-inicial {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 91px;
+  font-weight: 900;
+  text-shadow: 0 8px 25px rgba(20, 8, 42, 0.2);
+}
+
+.tarjeta-flotante {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 40px rgba(12, 5, 32, 0.16);
+}
+
+.tarjeta-icono {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #c1a0ff;
+  color: #392064;
+  font-size: 22px;
+}
+
+.tarjeta-flotante strong {
+  font-size: 12px;
+}
+
+.tarjeta-flotante p {
+  margin: 5px 0 0;
+  color: #e2d8f2;
+  font-size: 10px;
+}
+
+/* Formulario */
+
+.seccion-formulario {
+  width: min(100% - 40px, 1000px);
+  margin: 0 auto;
+  padding: 65px 0 80px;
+}
+
+.introduccion-formulario {
+  max-width: 650px;
+  margin-bottom: 33px;
+}
+
+.subtitulo {
+  color: #8953dc;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 2px;
+}
+
+.introduccion-formulario h2 {
+  margin: 12px 0;
+  color: #271747;
+  font-size: clamp(27px, 4vw, 35px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.introduccion-formulario > p {
+  margin: 0;
+  color: #777184;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.nota {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 19px;
+  color: #7b748b;
+  font-size: 11px;
+}
+
+.nota-icono {
+  width: 17px;
+  height: 17px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #a68ad7;
+  border-radius: 50%;
+  color: #8453cf;
+  font-size: 11px;
+  font-weight: 800;
+}
 
 .formulario {
-
-  background: white;
-
-  border-radius: 24px;
-
-  padding: 45px;
-
-  box-shadow:
-    0 20px 55px
-    rgba(65, 28, 85, 0.08);
-
+  padding: 36px;
+  border: 1px solid #efebf6;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 15px 55px rgba(55, 31, 94, 0.055);
 }
 
-
-/* =====================================================
-   SECCIONES
-===================================================== */
-
-.seccion-form {
-
-  padding-bottom: 35px;
-
-  margin-bottom: 35px;
-
-  border-bottom:
-    1px solid #eee6f2;
-
+.grupo-seccion {
+  width: 100%;
 }
 
-.seccion-form:last-of-type {
-
-  border-bottom: none;
-
-  margin-bottom: 10px;
-
-}
-
-
-/* =====================================================
-   TÍTULOS
-===================================================== */
-
-.titulo-form {
-
+.titulo-seccion {
   display: flex;
-
   align-items: center;
-
   gap: 15px;
-
-  margin-bottom: 25px;
-
+  margin-bottom: 28px;
 }
 
-.titulo-form span {
-
-  color: #7935aa;
-
-  font-size: 12px;
-
-  font-weight: 800;
-
-}
-
-.titulo-form h3 {
-
-  margin: 0;
-
-  color: #32183e;
-
-  font-size: 21px;
-
-}
-
-
-/* =====================================================
-   CAMPOS
-===================================================== */
-
-.campos {
-
+.numero-seccion {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
   display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #f1e9ff;
+  color: #7741ce;
+  font-size: 13px;
+  font-weight: 850;
+}
 
-  grid-template-columns:
-    1fr 1fr;
+.titulo-seccion h3 {
+  margin: 0;
+  color: #2e2148;
+  font-size: 16px;
+  font-weight: 800;
+}
 
-  gap: 20px;
+.titulo-seccion p {
+  margin: 6px 0 0;
+  color: #8b8498;
+  font-size: 11px;
+}
 
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 23px 22px;
 }
 
 .campo {
-
+  min-width: 0;
   display: flex;
-
   flex-direction: column;
-
-  gap: 8px;
-
 }
 
 .campo label {
-
-  color: #493950;
-
-  font-size: 13px;
-
-  font-weight: 700;
-
+  margin-bottom: 9px;
+  color: #423852;
+  font-size: 12px;
+  font-weight: 750;
 }
 
 .campo input,
 .campo select,
 .campo textarea {
-
   width: 100%;
-
-  border:
-    1px solid #ded3e4;
-
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #e6e1ee;
   border-radius: 9px;
-
-  background: #fcfaff;
-
-  color: #34213d;
-
-  padding: 14px;
-
-  font-family: inherit;
-
-  font-size: 14px;
-
   outline: none;
-
-  transition: 0.3s;
-
+  background: #fdfcff;
+  color: #342845;
+  font-family: inherit;
+  font-size: 12px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .campo input,
 .campo select {
-
-  height: 48px;
-
+  min-height: 46px;
 }
 
-.campo textarea {
-
-  resize: vertical;
-
-  min-height: 130px;
-
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: #aaa4b6;
 }
 
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-
-  border-color: #7a35a6;
-
-  background: white;
-
-  box-shadow:
-    0 0 0 3px
-    rgba(111, 45, 168, 0.08);
-
+  border-color: #9563e8;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(133, 79, 219, 0.1);
 }
 
-.campo input::placeholder,
-.campo textarea::placeholder {
-
-  color: #a69cab;
-
-}
-
-
-/* =====================================================
-   CHECKBOX
-===================================================== */
-
-.terminos {
-
-  margin: 25px 0;
-
-}
-
-.terminos label {
-
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 10px;
-
-  color: #756a7b;
-
-  font-size: 13px;
-
-  line-height: 1.5;
-
+.campo select {
   cursor: pointer;
-
 }
 
-.terminos input {
-
-  margin-top: 3px;
-
-  accent-color: #6f2da8;
-
+.campo textarea {
+  min-height: 125px;
+  resize: vertical;
+  line-height: 1.7;
 }
 
+.campo-completo {
+  grid-column: 1 / -1;
+}
 
-/* =====================================================
-   BOTÓN
-===================================================== */
+.contador {
+  margin-top: 7px;
+  color: #a19aaf;
+  font-size: 10px;
+  text-align: right;
+}
+
+.separador {
+  height: 1px;
+  margin: 35px 0;
+  background: #f0edf5;
+}
+
+/* Confirmación */
+
+.confirmacion {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.confirmacion input {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin: 1px 0 0;
+  accent-color: #7943d0;
+  cursor: pointer;
+}
+
+.confirmacion label {
+  color: #746d81;
+  font-size: 11px;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+/* Mensajes */
+
+.mensaje-exito,
+.mensaje-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin: 22px 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.mensaje-exito {
+  border: 1px solid #c9ecd7;
+  background: #effbf3;
+  color: #21643b;
+}
+
+.mensaje-error {
+  display: block;
+  border: 1px solid #f2cccc;
+  background: #fff0f0;
+  color: #a12626;
+}
+
+.mensaje-icono {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #d0f1da;
+  font-weight: 800;
+}
+
+.mensaje-exito strong,
+.mensaje-error strong {
+  font-size: 12px;
+}
+
+.mensaje-exito p,
+.mensaje-error p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* Acciones */
+
+.acciones-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.acciones-formulario > p {
+  max-width: 360px;
+  margin: 0;
+  color: #8c8498;
+  font-size: 10px;
+  line-height: 1.8;
+}
 
 .boton-enviar {
-
-  width: 100%;
-
-  display: flex;
-
+  min-width: 210px;
+  min-height: 49px;
+  padding: 0 19px;
+  display: inline-flex;
   align-items: center;
-
   justify-content: space-between;
-
-  padding: 17px 22px;
-
-  border: none;
-
-  border-radius: 10px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #6f2da8,
-      #873db8
-    );
-
-  color: white;
-
+  gap: 24px;
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(115deg, #8250dc, #612db9);
+  color: #ffffff;
   font-family: inherit;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
+  font-size: 12px;
+  font-weight: 750;
   cursor: pointer;
-
-  transition: 0.3s;
-
+  box-shadow: 0 7px 18px rgba(106, 55, 194, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
-.boton-enviar:hover {
-
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 12px 25px
-    rgba(111, 45, 168, 0.25);
-
+.boton-enviar:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(106, 55, 194, 0.3);
 }
 
 .boton-enviar strong {
-
-  font-size: 21px;
-
-}
-
-
-/* =====================================================
-   MENSAJE
-===================================================== */
-
-.mensaje-exito {
-
-  margin-top: 20px;
-
-  padding: 15px;
-
-  border-radius: 9px;
-
-  background: #eee2f5;
-
-  color: #5c2879;
-
-  font-size: 13px;
-
-  text-align: center;
-
-  font-weight: 600;
-
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer {
-
-  color: white;
-
-  background: #1d1025;
-
-}
-
-.footer-contenido {
-
-  min-height: 180px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 30px;
-
-}
-
-
-/* MARCA */
-
-.footer-marca {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 15px;
-
-}
-
-.footer-marca img {
-
-  width: 65px;
-
-  height: 65px;
-
-  object-fit: contain;
-
-}
-
-.footer-marca h3 {
-
-  margin: 0 0 8px;
-
   font-size: 20px;
-
+  font-weight: 500;
 }
 
-.footer-marca h3 span {
-
-  color: #a45bd0;
-
+.boton-enviar:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
-.footer-marca p {
+/* Pie de página */
 
+.pie-pagina {
+  padding: 28px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eeebf4;
+  background: #ffffff;
+}
+
+.logo-pie .logo-icono {
+  width: 33px;
+  height: 33px;
+  font-size: 19px;
+}
+
+.logo-pie .logo-texto {
+  font-size: 13px;
+}
+
+.pie-pagina > p {
   margin: 0;
-
-  color: #a99eaf;
-
-  font-size: 13px;
-
+  color: #8a8297;
+  font-size: 11px;
 }
 
-
-/* LINKS */
-
-.footer-links a {
-
-  color: #d0aee0;
-
-  text-decoration: none;
-
-  font-size: 13px;
-
-  font-weight: bold;
-
+.copyright {
+  color: #9a93a6;
+  font-size: 10px;
 }
 
-.footer-links a:hover {
+/* Adaptación a celulares y tabletas */
 
-  color: white;
-
-}
-
-
-/* FOOTER FINAL */
-
-.footer-final {
-
-  padding: 18px 0;
-
-  border-top:
-    1px solid #35283b;
-
-  color: #817787;
-
-  font-size: 12px;
-
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1000px) {
-
-  .menu {
-    display: none;
+@media (max-width: 900px) {
+  .encabezado {
+    padding: 18px 5%;
+    flex-wrap: wrap;
   }
 
-  .encabezado-contenido {
-
-    grid-template-columns: 1fr;
-
-    text-align: center;
-
+  .navegacion {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
   }
 
-  .encabezado-texto {
-
-    margin: 0 auto;
-
+  .navegacion a.activo::after {
+    bottom: -5px;
   }
 
-  .encabezado-texto > p:last-child {
-
-    margin-left: auto;
-
-    margin-right: auto;
-
+  .hero {
+    padding: 52px 7%;
+    grid-template-columns: 1fr 0.7fr;
   }
 
-  .encabezado-logo {
-
-    min-height: 260px;
-
+  .hero-decoracion {
+    transform: scale(0.85);
   }
 
-  .formulario-grid {
-
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-  }
-
-  .informacion {
-
-    position: static;
-
-  }
-
-}
-
-
-/* =====================================================
-   CELULAR
-===================================================== */
-
-@media (max-width: 600px) {
-
-  .nav-contenido {
-
-    min-height: 70px;
-
-  }
-
-  .logo {
-
-    width: 43px;
-
-    height: 43px;
-
-  }
-
-  .nombre-logo {
-
-    font-size: 17px;
-
-  }
-
-  .boton-regresar {
-
-    padding: 9px 12px;
-
-    font-size: 11px;
-
-  }
-
-
-  /* ENCABEZADO */
-
-  .encabezado-contenido {
-
-    padding: 55px 0;
-
-  }
-
-  .encabezado h1 {
-
-    font-size: 43px;
-
-  }
-
-  .encabezado-texto > p:last-child {
-
-    font-size: 14px;
-
-  }
-
-  .encabezado-logo img {
-
-    width: 270px;
-
-  }
-
-
-  /* FORMULARIO */
-
-  .formulario-seccion {
-
-    padding: 60px 0;
-
+  .hero-detalles {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .formulario {
-
-    padding: 25px 20px;
-
-    border-radius: 18px;
-
+    padding: 28px;
   }
-
-  .campos {
-
-    grid-template-columns: 1fr;
-
-  }
-
-
-  /* FOOTER */
-
-  .footer-contenido {
-
-    padding: 40px 0;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-  }
-
 }
 
+@media (max-width: 620px) {
+  .encabezado {
+    gap: 16px;
+  }
+
+  .logo-texto {
+    font-size: 13px;
+  }
+
+  .boton-contacto {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .navegacion {
+    gap: 15px;
+  }
+
+  .navegacion a {
+    font-size: 11px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 48px 7% 25px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-contenido > p {
+    font-size: 13px;
+  }
+
+  .hero-detalles {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .detalle {
+    font-size: 10px;
+  }
+
+  .hero-decoracion {
+    min-height: 205px;
+    transform: scale(0.8);
+    margin-top: 5px;
+  }
+
+  .tarjeta-flotante {
+    right: 2%;
+  }
+
+  .seccion-formulario {
+    width: min(100% - 28px, 1000px);
+    padding: 43px 0 50px;
+  }
+
+  .introduccion-formulario h2 {
+    font-size: 29px;
+  }
+
+  .formulario {
+    padding: 22px 17px;
+    border-radius: 13px;
+  }
+
+  .rejilla {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .campo-completo {
+    grid-column: auto;
+  }
+
+  .titulo-seccion {
+    gap: 11px;
+  }
+
+  .titulo-seccion h3 {
+    font-size: 14px;
+  }
+
+  .titulo-seccion p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .numero-seccion {
+    width: 37px;
+    height: 37px;
+  }
+
+  .separador {
+    margin: 27px 0;
+  }
+
+  .acciones-formulario {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .boton-enviar {
+    width: 100%;
+  }
+
+  .pie-pagina {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px 6%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 </style>
